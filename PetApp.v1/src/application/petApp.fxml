@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PetStoreController">
+   <children>
+      <AnchorPane fx:id="displayPane" layoutX="253.0" prefHeight="400.0" prefWidth="448.0" style="-fx-background-color: #44366d;">
+         <children>
+            <TextArea fx:id="display" layoutX="9.0" layoutY="200.0" prefHeight="200.0" prefWidth="429.0" />
+            <TextField fx:id="petType" layoutX="216.0" layoutY="56.0" />
+            <TextField fx:id="petName" layoutX="216.0" layoutY="104.0" />
+            <Label layoutX="115.0" layoutY="60.0" text="Pet Type" textFill="WHITE" />
+            <Label layoutX="112.0" layoutY="108.0" text="Pet Name" textFill="WHITE" />
+            <Button fx:id="addPet" layoutX="139.0" layoutY="161.0" mnemonicParsing="false" onAction="#btnAdd" text="Add Pet" />
+            <Button fx:id="viewPets" layoutX="265.0" layoutY="161.0" mnemonicParsing="false" onAction="#btnView" text="View Pets" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="157.0" fitWidth="152.0" layoutX="66.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dog-pawprints.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
