@@ -29,12 +29,12 @@ public class PetStoreController {
 
     @FXML
     void btnAdd(ActionEvent event) {
-
+    	display.setText("pet successfully added");
     }
 
     @FXML
     void btnView(ActionEvent event) {
-
+    	display.setText("data will show here");
     }
 
 }
